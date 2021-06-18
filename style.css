@@ -1,0 +1,163 @@
+/*General styles*/
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*Nav bar*/
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+}
+
+.nav-img {
+  width: 1rem;
+}
+
+.nav-links {
+  color: #f5f5f7;
+  display: flex;
+  display: none;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+/*Banner*/
+
+.banner {
+  background-color: #f5f5f7;
+  font-size: 0.87rem;
+  text-align: center;
+}
+
+.banner p {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.banner a,
+.background-style a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/*Background-images*/
+
+.background-style {
+  background-position: center;
+  background-size: cover;
+  min-height: 30rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.device-info-1 {
+  background-image: url("IMG/iphone_12_updated__jepm2xpxncuy_small_2x.jpg");
+}
+
+.device-info-2 {
+  background-image: url("IMG/iphone_12_pro_us__e5oyysg4k0ya_medium.jpg");
+}
+
+.device-info-3 {
+  background-image: url("IMG/hero_ipad_pro_non_avail__fcrsmhs4b7ma_medium.jpg");
+}
+
+.device-info-4 {
+  background-image: url("IMG/promo_imac__crg641tip4q6_medium.jpg");
+}
+
+.device-info-5 {
+  background-image: url("IMG/promo_watch_series_6_lte__f8lrasjnry2y_medium.jpg");
+}
+
+/*Text*/
+
+h2,
+h3,
+.background-style p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.background-style p {
+  font-size: 0.9rem;
+  color: #86868b;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.background-style a:last-of-type {
+  margin-left: 1.5rem;
+}
+
+.device-info-2 h2,
+.device-info-3 h2,
+.device-info-2 h3,
+.device-info-3 h3,
+.device-info-5 h2,
+.device-info-5 h3 {
+  color: #f5f5f7;
+}
+
+.device-info-5 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-info-5 img {
+  width: 1.5rem;
+}
+
+.device-info-5 h2,
+.device-info-5 p {
+  text-transform: uppercase;
+}
+
+.device-info-5 p {
+  color: tomato;
+  margin-top: -0.5rem;
+}
+
+/*Media queries*/
+
+@media (min-width: 750px) {
+  .device-info-1 {
+    background-image: url("IMG/iphone_12_updated__jepm2xpxncuy_large.jpg");
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .device-info-4,
+  .device-info-5 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav-links {
+    display: flex;
+  }
+}

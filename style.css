@@ -9,27 +9,49 @@ body {
 /*Nav bar*/
 
 nav {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.burger-menu {
+  margin-left: 1.5rem;
+}
+
+.burger-menu span {
+  background: #f5f5f7;
+  display: block;
+  height: 1px;
+  width: 1.2rem;
+}
+
+.burger-menu span:first-child {
+  margin-bottom: 0.4rem;
 }
 
 .nav-img {
   width: 1rem;
 }
 
-.nav-links {
-  color: #f5f5f7;
-  display: flex;
-  display: none;
-  gap: 4rem;
-  list-style-type: none;
+.nav-img:last-of-type {
+  margin-right: 1.5rem;
 }
 
-nav ul {
+.nav-container {
+  position: relative;
+}
+
+.nav-links {
+  color: #000;
+  list-style-type: none;
   padding: 0;
+  position: absolute;
+  top: 100%;
+  left: -28rem;
+  text-align: left;
 }
 
 /*Banner*/
@@ -37,11 +59,13 @@ nav ul {
 .banner {
   background-color: #f5f5f7;
   font-size: 0.87rem;
+
   text-align: center;
 }
 
 .banner p {
   padding: 0.5rem;
+  padding-top: 3rem;
   margin: 0;
 }
 
@@ -142,6 +166,14 @@ h3 {
 /*Media queries*/
 
 @media (min-width: 750px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-img:first-of-type {
+    margin-left: 1.5rem;
+  }
+
   .device-info-1 {
     background-image: url("IMG/iphone_12_updated__jepm2xpxncuy_large.jpg");
   }
